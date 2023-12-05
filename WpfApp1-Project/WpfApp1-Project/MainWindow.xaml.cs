@@ -25,7 +25,7 @@ namespace WpfApp1_Project
     public partial class MainWindow : Window
     {
         //private IMongoCollection<Employee> employeeCollection;
-        //private ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
+        private ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
         //private MongoClient client;
         private IMongoCollection<Employee> employeeCollection;
         public MainWindow()
@@ -63,13 +63,38 @@ namespace WpfApp1_Project
             try
             {
                 var employeesFromDB = await employeeCollection.Find(_ => true).ToListAsync();
-                ShowAllEmployeesPage showAllEmployeesPage = new ShowAllEmployeesPage(employeesFromDB);
+                ShowAllEmployeesPage showAllEmployeesPage = new ShowAllEmployeesPage(employeeCollection,employeesFromDB);
                 mainFrame.NavigationService.Navigate(showAllEmployeesPage);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error retrieving employees: " + ex.Message);
             }
+
+        }
+        private async  void btnShowAllSalaries_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var allSalaries = await employeeCollection.Find(_ => true).ToListAsync();
+
+                ShowAllSalaryPage showAllSalaryPage = new ShowAllSalaryPage();
+                showAllSalaryPage.DisplaySalaries(allSalaries);
+
+                mainFrame.NavigationService.Navigate(showAllSalaryPage);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving salaries: " + ex.Message);
+            }
+
+
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            SearchPage searchPage = new SearchPage(employeeCollection);
+            mainFrame.NavigationService.Navigate(searchPage);
 
         }
     }

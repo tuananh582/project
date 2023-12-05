@@ -164,8 +164,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ShowAllEmployeesPage.xaml.cs">
       <DependentUpon>ShowAllEmployeesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllSalaryPage.xaml.cs">
+      <DependentUpon>ShowAllSalaryPage.xaml</DependentUpon>
     </Compile>
     <Page Include="AddEmployeePage.xaml">
       <SubType>Designer</SubType>
@@ -194,7 +200,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ShowAllEmployeesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShowAllSalaryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

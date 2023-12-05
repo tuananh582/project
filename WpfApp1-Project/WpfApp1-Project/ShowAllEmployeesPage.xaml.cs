@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using MongoDB.Driver;
 namespace WpfApp1_Project
 {
     /// <summary>
@@ -21,10 +21,55 @@ namespace WpfApp1_Project
     /// </summary>
     public partial class ShowAllEmployeesPage : Page
     {
-        public ShowAllEmployeesPage(List<Employee> employees)
+        private readonly IMongoCollection<Employee> employeeCollection;
+        private List<Employee> employeesList;
+        public ShowAllEmployeesPage(IMongoCollection<Employee> empCollection, List<Employee> employees)
         {
             InitializeComponent();
-            listViewEmployees.ItemsSource = employees;
+
+            employeeCollection = empCollection;
+            employeesList = employees;
+            LoadEmployeesToListView();
+
+        }
+        public void LoadEmployeesToListView()
+        {
+            listViewEmployees.ItemsSource = employeesList;
+        }
+
+        private async void DeleteEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            if (listViewEmployees.SelectedIndex != -1)
+            {
+                try
+                {
+                    Employee selectedEmployee = (Employee)listViewEmployees.SelectedItem;
+                    var DeleteResult = await employeeCollection.DeleteOneAsync(emp => emp.Id == selectedEmployee.Id);
+                    if (DeleteResult.DeletedCount > 0) {
+                        employeesList.Remove(selectedEmployee);
+                        listViewEmployees.ItemsSource = null;
+                        listViewEmployees.ItemsSource = employeesList;
+                    }
+                    //employeesList.Remove(selectedEmployee);
+                    //LoadEmployeesToListView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error deleting employee: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select an employee to delete.");
+            }
+
+        }
+        private void BackToMainWinDow_Click(object sender, RoutedEventArgs e)
+        {
+            //NavigationService?.Navigate(new MainWindow());
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            
         }
     }
-}
+};
