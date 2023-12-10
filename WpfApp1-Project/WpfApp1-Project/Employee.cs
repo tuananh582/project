@@ -15,12 +15,11 @@ namespace WpfApp1_Project
             public int Age { get; set; }
             public decimal Salary { get; set; }
             public decimal BonusSalary { get; set; }
-            public decimal TotalSalary // New property to hold total salary
-            {
-                get { return Salary + BonusSalary; }
-            }
-            public string Department { get; set; }
+        public decimal TotalSalary => (Salary * 12) + BonusSalary;
+
+        public string Department { get; set; }
             public string City { get; set; }
         
+
     }
 }

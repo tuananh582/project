@@ -30,11 +30,11 @@
                 <!-- Action Buttons -->
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
                     <!-- <Button x:Name="btnMainPage" Background="PaleVioletRed" Foreground="White" Margin="5" Content="Main Page" Click="btnMainPage_Click" Width="150" />-->
-                    <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Add Employee" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
-                    <Button x:Name="btnShowAll" Content="Show All Employees" Click="btnShowAll_Click" Width="150" Margin="5" Background="#2196F3" Foreground="White"/>
+                    <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
+                    <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#2196F3" Foreground="White"/>
                     
-                    <Button x:Name="btnShowAllSalaries" Click="btnShowAllSalaries_Click" Content="Show All Salaries" Width="150" Margin="5" Background="#9C27B0" Foreground="White"/>
-                    <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Search" Width="80" Margin="5" Background="#FF9800" Foreground="White"/>
+                    <Button x:Name="btnShowAllSalaries" Click="btnShowAllSalaries_Click" Content="Hiển Thị Lương Nhân Viên" Width="150" Margin="5" Background="#9C27B0" Foreground="White"/>
+                    <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Tìm Kiếm" Width="80" Margin="5" Background="#FF9800" Foreground="White"/>
                 </StackPanel>
 
                 <!-- Employee List -->

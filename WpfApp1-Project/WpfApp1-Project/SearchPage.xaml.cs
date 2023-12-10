@@ -37,6 +37,26 @@ namespace WpfApp1_Project
         private async  void Search_Click(object sender, RoutedEventArgs e)
         {
 
+            //string searchName = txtSearchName.Text.Trim();
+
+            //if (!string.IsNullOrEmpty(searchName))
+            //{
+            //    try
+            //    {
+            //        var filter = Builders<Employee>.Filter.Where(emp => emp.Name.ToLower().Contains(searchName.ToLower()));
+            //        var filteredEmployees = await employeeCollection.Find(filter).ToListAsync();
+
+            //        searchResults.Clear();
+            //        foreach (var emp in filteredEmployees)
+            //        {
+            //            searchResults.Add(emp);
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("Error searching for employees: " + ex.Message);
+            //    }
+            //}
             string searchName = txtSearchName.Text.Trim();
 
             if (!string.IsNullOrEmpty(searchName))
@@ -46,10 +66,17 @@ namespace WpfApp1_Project
                     var filter = Builders<Employee>.Filter.Where(emp => emp.Name.ToLower().Contains(searchName.ToLower()));
                     var filteredEmployees = await employeeCollection.Find(filter).ToListAsync();
 
-                    searchResults.Clear();
-                    foreach (var emp in filteredEmployees)
+                    if (filteredEmployees.Count == 0)
                     {
-                        searchResults.Add(emp);
+                        MessageBox.Show("No employees found with the provided name.");
+                    }
+                    else
+                    {
+                        searchResults.Clear();
+                        foreach (var emp in filteredEmployees)
+                        {
+                            searchResults.Add(emp);
+                        }
                     }
                 }
                 catch (Exception ex)

@@ -19,7 +19,7 @@
             </Grid.RowDefinitions>
 
             <!-- TextBlock and TextBox for search -->
-            <TextBlock Text="Enter Name " FontWeight="Bold" Margin="0,0,0,0"/>
+            <TextBlock Text="Nhập Tên : " FontWeight="Bold" Margin="0,0,0,0"/>
             <TextBox x:Name="txtSearchName" Grid.Row="0" Margin="0,0,0,0" Width="200"/>
             <Button Content="Search" Width="100" Click="Search_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right"/>
 
@@ -33,12 +33,13 @@
                             </Style>
                         </GridView.ColumnHeaderContainerStyle>
                         <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
-                        <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Age}"/>
-                        <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Salary}"/>
-                        <GridViewColumn Header="Bonus Salary" DisplayMemberBinding="{Binding BonusSalary}"/>
-                        <GridViewColumn Header="Total Salary" DisplayMemberBinding="{Binding TotalSalary}"/>
-                        <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Department}"/>
-                        <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
+                        <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Age}"/>
+                        <GridViewColumn Header="Lương Hằng Tháng" DisplayMemberBinding="{Binding Salary}"/>
+                        <GridViewColumn Header="Lương Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
+                        <GridViewColumn Header="Lương Hằng Năm" DisplayMemberBinding="{Binding TotalSalary,StringFormat={}{0:F2}}"/>
+                      
+                        <GridViewColumn Header="Phòng Ban" DisplayMemberBinding="{Binding Department}"/>
+                        <GridViewColumn Header="Thành Phố" DisplayMemberBinding="{Binding City}"/>
                     </GridView>
                 </ListView.View>
             </ListView>
