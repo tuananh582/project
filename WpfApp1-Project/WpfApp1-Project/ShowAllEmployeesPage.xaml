@@ -8,31 +8,59 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ShowAllEmployeesPage">
 
-    <Grid>
-        <Button Content="Back To Main WinDow" Click="BackToMainWinDow_Click" Width="120" VerticalAlignment="Bottom"/>
+    <Page.Resources>
+        <!-- Define a style for the GridViewColumnHeader to center-align column headers -->
+        <Style x:Key="CenteredHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
 
-        <ListView x:Name="listViewEmployees" Margin="10" Background="WhiteSmoke">
-            <ListView.View>
-                <GridView>
-                    <GridView.ColumnHeaderContainerStyle>
-                        <Style TargetType="{x:Type GridViewColumnHeader}">
-                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-                        </Style>
-                    </GridView.ColumnHeaderContainerStyle>
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Age}"/>
-                    <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Salary}"/>
-                    <GridViewColumn Header="Bonus Salary" DisplayMemberBinding="{Binding BonusSalary}"/>
-                    <GridViewColumn Header="Total Salary" DisplayMemberBinding="{Binding TotalSalary}"/>
-                    <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Department}"/>
-                    <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
-                </GridView>
-            </ListView.View>
-            
-        </ListView>
-        <Button Content="Delete " Click="DeleteEmployee_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+        <!-- Define a style for ListViewItem to add some basic styling -->
+        <Style x:Key="ListViewItemStyle" TargetType="ListViewItem">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="DarkGray"/>
+            <Setter Property="BorderThickness" Value="0 0 0 1"/>
+            <Setter Property="Margin" Value="0 1"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Page.Resources>
+    <Viewbox>
+        <Grid Width="800" Height="450">
+            <Grid.RowDefinitions>
+                <!-- Define rows for content and buttons -->
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-    </Grid>
+            <!-- ListView to display employee information -->
+            <ListView x:Name="listViewEmployees" Margin="10" Background="WhiteSmoke" BorderBrush="DarkGray" BorderThickness="1">
+                <ListView.View>
+                    <GridView>
+                        <GridView.ColumnHeaderContainerStyle>
+                            <!-- Apply the defined style to center-align column headers -->
+                            <Style BasedOn="{StaticResource CenteredHeaderStyle}" 
+                                   TargetType="{x:Type GridViewColumnHeader}"/>
+                        </GridView.ColumnHeaderContainerStyle>
+                        <!-- Define columns for employee data -->
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Age}"/>
+                        <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Salary}"/>
+                        <GridViewColumn Header="Bonus Salary" DisplayMemberBinding="{Binding BonusSalary}"/>
+                        <GridViewColumn Header="Total Salary" DisplayMemberBinding="{Binding TotalSalary}"/>
+                        <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Department}"/>
+                        <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
+                    </GridView>
+                </ListView.View>
+                <!-- Apply the ListViewItemStyle -->
+                <ListView.ItemContainerStyle>
+                    <Style BasedOn="{StaticResource ListViewItemStyle}" TargetType="ListViewItem"/>
+                </ListView.ItemContainerStyle>
+            </ListView>
 
-
+            <!-- Buttons at the bottom -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <Button Content="Delete" Click="DeleteEmployee_Click" Width="100" Margin="5"/>
+                <Button Content="Back To Main Window" Click="BackToMainWinDow_Click" Width="150" Margin="5"/>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
 </Page>
