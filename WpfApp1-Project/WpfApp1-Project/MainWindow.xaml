@@ -33,7 +33,7 @@
                     <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
                     <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#2196F3" Foreground="White"/>
                     
-                    <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Tìm Kiếm" Width="80" Margin="5" Background="#FF9800" Foreground="White"/>
+                    <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Thống Kê" Width="80" Margin="5" Background="#FF9800" Foreground="White"/>
                 </StackPanel>
 
                 <!-- Employee List -->

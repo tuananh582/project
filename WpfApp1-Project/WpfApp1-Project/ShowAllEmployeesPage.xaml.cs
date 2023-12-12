@@ -71,5 +71,16 @@ namespace WpfApp1_Project
             mainWindow.Show();
             
         }
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            ListView listView = listViewEmployees;
+            PrintDialog printDialog = new PrintDialog();
+
+            if (printDialog.ShowDialog() == true)
+            {
+                printDialog.PrintVisual(listView, "Print ListView Content");
+            }
+        }
     }
 };
