@@ -16,15 +16,24 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <!-- TextBlock and TextBox for search -->
+            
             <TextBlock Text="Nhập Tên : " FontWeight="Bold" Margin="0,0,0,0"/>
-            <TextBox x:Name="txtSearchName" Grid.Row="0" Margin="0,0,0,0" Width="200"/>
-            <Button Content="Search" Width="100" Click="Search_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right"/>
-
+            <TextBox x:Name="txtSearchName" Grid.Row="0" Margin="120,0,0,0" Width="200"/>
+            
+            <Button Content="Tìm Kiếm" Width="100" Click="Search_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right"/>
+            <TextBlock Text="Nhập Phòng Ban : " FontWeight="Bold" Margin="0,10,0,0" Grid.Row="1"/>
+            <TextBox x:Name="txtSearchDepartment" Grid.Row="1" Margin="120,10,0,0" Width="200"/>
+            <Button Content="Tìm kiếm" Width="100" Click="Button_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right" Margin="325,10,0,0" Grid.Row="1"/>
+            <TextBlock Text="Nhập Năm : " FontWeight="Bold" Margin="0,10,0,0" Grid.Row="2"/>
+            <TextBox x:Name="txtSearchYear" Grid.Row="2" Margin="120,10,0,0" Width="200"/>
+            <Button Content="Tìm Kiếm" Width="100" Click="Search_Year_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right" Grid.Row="2" Margin="325,10,0,0"/>
             <!-- ListView for search results -->
-            <ListView x:Name="listViewSearchResults" Grid.Row="1" Margin="0,10" Background="WhiteSmoke">
+            <ListView x:Name="listViewSearchResults" Grid.Row="3" Margin="0,10" Background="WhiteSmoke">
                 <ListView.View>
                     <GridView>
                         <GridView.ColumnHeaderContainerStyle>
@@ -47,7 +56,7 @@
             </ListView>
 
             <!-- Button to go back to MainWindow -->
-            <Button Grid.Row="2" Click="BackToMain_Click" Content="Back To MainWinDow" Width="130" Background="BlueViolet" Margin="5"  Foreground="White"/>
+            <Button Grid.Row="4" Click="BackToMain_Click" Content="Back To MainWinDow" Width="130" Background="BlueViolet" Margin="5"  Foreground="White"/>
         </Grid>
     </Viewbox>
 </Page>

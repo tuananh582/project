@@ -62,7 +62,5 @@ G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeePage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeePage.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllEmployeesPage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllEmployeesPage.baml
-G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllSalaryPage.g.cs
-G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllSalaryPage.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchPage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchPage.baml

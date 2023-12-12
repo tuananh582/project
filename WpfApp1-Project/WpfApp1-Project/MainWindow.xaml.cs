@@ -72,25 +72,6 @@ namespace WpfApp1_Project
             }
 
         }
-        private async  void btnShowAllSalaries_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                var allSalaries = await employeeCollection.Find(_ => true).ToListAsync();
-
-                ShowAllSalaryPage showAllSalaryPage = new ShowAllSalaryPage();
-                showAllSalaryPage.DisplaySalaries(allSalaries);
-
-                mainFrame.NavigationService.Navigate(showAllSalaryPage);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error retrieving salaries: " + ex.Message);
-            }
-
-
-        }
-
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             SearchPage searchPage = new SearchPage(employeeCollection);
