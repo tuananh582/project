@@ -14,7 +14,9 @@ namespace WpfApp1_Project
             public string Name { get; set; }
             public int Age { get; set; }
             public decimal Salary { get; set; }
-            public decimal BonusSalary { get; set; }
+            public decimal product { get; set; }
+            public decimal year { get; set; }
+        public decimal BonusSalary => product * 15000;
         public decimal TotalSalary => (Salary * 12) + BonusSalary;
 
         public string Department { get; set; }

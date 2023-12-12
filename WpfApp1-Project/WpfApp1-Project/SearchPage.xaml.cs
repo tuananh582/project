@@ -80,7 +80,7 @@ namespace WpfApp1_Project
                     }
                 }
                 catch (Exception ex)
-                {
+                {   
                     MessageBox.Show("Error searching for employees: " + ex.Message);
                 }
             }

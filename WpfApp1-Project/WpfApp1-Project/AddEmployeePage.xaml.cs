@@ -55,9 +55,10 @@ namespace WpfApp1_Project
                     Name = txtName.Text,
                     Age = int.Parse(txtAge.Text),
                     Salary = decimal.Parse(txtSalary.Text),
-                    BonusSalary = decimal.Parse(txtBonusSalary.Text),
+                    product = decimal.Parse(txtProduct.Text),
                     Department = txtDepartment.Text,
-                    City = txtCity.Text
+                    City = txtCity.Text,
+                    year=decimal.Parse(txtYear.Text),
                 };
                 // Inserting the new employee into the MongoDB collection
                 await employeeCollection.InsertOneAsync(newEmployee);
@@ -77,9 +78,10 @@ namespace WpfApp1_Project
             txtName.Text = "";
             txtAge.Text = "";
             txtSalary.Text = "";
-            txtBonusSalary.Text = "";
+            txtProduct.Text = "";
             txtDepartment.Text = "";
             txtCity.Text = "";
+            txtYear.Text = "";
         }
 
         private void BackToMainWinDow_Click(object sender, RoutedEventArgs e)

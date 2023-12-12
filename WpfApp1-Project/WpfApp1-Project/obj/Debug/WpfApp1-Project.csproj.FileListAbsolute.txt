@@ -58,8 +58,6 @@ G:\doan\WpfApp1-Project\WpfApp1-Project\bin\Debug\System.Security.Principal.Wind
 G:\doan\WpfApp1-Project\WpfApp1-Project\bin\Debug\System.Text.Encoding.CodePages.xml
 G:\doan\WpfApp1-Project\WpfApp1-Project\bin\Debug\System.Threading.Tasks.Extensions.xml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\WpfApp1-Project.csproj.CopyComplete
-G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeeWindow.g.cs
-G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeeWindow.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeePage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\AddEmployeePage.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllEmployeesPage.g.cs

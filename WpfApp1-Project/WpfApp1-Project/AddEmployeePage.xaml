@@ -30,12 +30,16 @@
                     <TextBox x:Name="txtAge" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Nhập Số Năm " Width="100" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtYear" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
                     <TextBlock Text="Nhập Lương : " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtSalary" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Tiền Thưởng " Width="100" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtBonusSalary" Width="200"/>
+                    <TextBlock Text=" Sản Phẩm Đã Làm " Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtProduct" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
                     <TextBlock Text="Nhập Phòng Ban : " Width="100" VerticalAlignment="Center"/>

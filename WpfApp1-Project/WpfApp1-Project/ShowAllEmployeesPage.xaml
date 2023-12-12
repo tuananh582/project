@@ -43,7 +43,9 @@
                         <!-- Define columns for employee data -->
                         <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Name}"/>
                         <GridViewColumn Header="Tuổi" DisplayMemberBinding="{Binding Age}"/>
+                        <GridViewColumn Header="Số Năm Làm Việc" DisplayMemberBinding="{Binding year}"/>
                         <GridViewColumn Header="Lương Hằng Tháng" DisplayMemberBinding="{Binding Salary}"/>
+                        <GridViewColumn Header="Số Lượng Sản Phẩm Làm Được" DisplayMemberBinding="{Binding product}"/>
                         <GridViewColumn Header="Lương Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
                         <GridViewColumn Header="Lương Hằng Năm" DisplayMemberBinding="{Binding TotalSalary,StringFormat={}{0:F2}}"/>
                         <GridViewColumn Header="Phòng Ban" DisplayMemberBinding="{Binding Department}"/>
