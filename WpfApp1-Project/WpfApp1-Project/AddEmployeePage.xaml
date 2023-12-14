@@ -22,6 +22,10 @@
             <StackPanel Grid.Row="1" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <!-- Your Existing Input Fields -->
                 <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Nhập Mã NV: " Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtmanv" Width="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5">
                     <TextBlock Text="Nhập Tên: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtName" Width="200"/>
                 </StackPanel>
@@ -29,10 +33,22 @@
                     <TextBlock Text="Nhập Tuổi: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtAge" Width="200"/>
                 </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Nhập chức vụ " Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtPos" Width="200"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Nhập Phòng Ban : " Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtDepartment" Width="200"/>
+                </StackPanel>
+
                 <StackPanel Orientation="Horizontal" Margin="0,5">
                 <TextBlock Text="Nhập Số Năm " Width="100" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtYear" Width="200"/>
             </StackPanel>
+                
             <StackPanel Orientation="Horizontal" Margin="0,5">
                     <TextBlock Text="Nhập Lương : " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtSalary" Width="200"/>
@@ -41,10 +57,7 @@
                     <TextBlock Text=" Sản Phẩm Đã Làm " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtProduct" Width="200"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Phòng Ban : " Width="100" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtDepartment" Width="200"/>
-                </StackPanel>
+                
                 <StackPanel Orientation="Horizontal" Margin="0,5">
                     <TextBlock Text="Nhập Thành Phố : " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtCity" Width="200"/>

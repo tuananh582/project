@@ -64,3 +64,13 @@ G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllEmployeesPage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\ShowAllEmployeesPage.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchPage.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchPage.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateDepart.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateDepart.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdatePos.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdatePos.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateInfor.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateInfor.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateYear.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateYear.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateSalary.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateSalary.baml

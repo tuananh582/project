@@ -41,6 +41,8 @@
                                 <Setter Property="HorizontalContentAlignment" Value="Center"/>
                             </Style>
                         </GridView.ColumnHeaderContainerStyle>
+                        
+                        <GridViewColumn Header="Mã NV" DisplayMemberBinding="{Binding MaNv}"/>
                         <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Name}"/>
                         <GridViewColumn Header="Tuổi" DisplayMemberBinding="{Binding Age}"/>
                         <GridViewColumn Header="Năm Làm Việc" DisplayMemberBinding="{Binding year}"/>

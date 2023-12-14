@@ -12,6 +12,7 @@ namespace WpfApp1_Project
         
             public ObjectId Id { get; set; }
             public string Name { get; set; }
+            public string MaNv { get; set; }
             public int Age { get; set; }
             public decimal Salary { get; set; }
             public decimal product { get; set; }
@@ -20,7 +21,8 @@ namespace WpfApp1_Project
         public decimal TotalSalary => Salary  + BonusSalary;
 
         public string Department { get; set; }
-            public string City { get; set; }
+        public string Position { get; set; }
+        public string City { get; set; }
         
 
     }

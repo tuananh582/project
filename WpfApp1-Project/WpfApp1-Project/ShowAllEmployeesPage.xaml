@@ -41,6 +41,7 @@
                                    TargetType="{x:Type GridViewColumnHeader}"/>
                         </GridView.ColumnHeaderContainerStyle>
                         <!-- Define columns for employee data -->
+                        <GridViewColumn Header="Mã NV" DisplayMemberBinding="{Binding MaNv}"/>
                         <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Name}"/>
                         <GridViewColumn Header="Tuổi" DisplayMemberBinding="{Binding Age}"/>
                         <GridViewColumn Header="Số Năm Làm Việc" DisplayMemberBinding="{Binding year}"/>

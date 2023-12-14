@@ -1,0 +1,63 @@
+﻿<Page x:Class="WpfApp1_Project.UpdateDepart"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1_Project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+       Background="White"
+      Title="UpdateDepart">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- TextBlock and TextBox for search -->
+
+            <TextBlock Text="Nhập Mã Nv " FontWeight="Bold" Margin="0,0,0,0"/>
+            <TextBox x:Name="txtSearchMaNv" Grid.Row="0" Margin="120,0,0,0" Width="200"/>
+
+            <Button Content="Tìm Kiếm" Width="100" Click="Button_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right"/>
+            <TextBlock Text="Nhập Phòng Ban : " FontWeight="Bold" Margin="0,10,0,0" Grid.Row="1"/>
+            <TextBox x:Name="txtUpdateDepartment" Grid.Row="1" Margin="120,10,0,0" Width="200"/>
+            <Button Content="Update" Width="100" Click="Button_Click_1" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right" Grid.Row="1"  Margin="325,10,0,0"/>
+
+            <ListView x:Name="listViewSearchResults" Grid.Row="3" Margin="0,10" Background="WhiteSmoke">
+                <ListView.View>
+                    <GridView>
+                        <GridView.ColumnHeaderContainerStyle>
+                            <Style TargetType="{x:Type GridViewColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            </Style>
+                        </GridView.ColumnHeaderContainerStyle>
+
+                        <GridViewColumn Header="Mã NV" DisplayMemberBinding="{Binding MaNv}"/>
+                        <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Tuổi" DisplayMemberBinding="{Binding Age}"/>
+                        <GridViewColumn Header="Chức Vụ" DisplayMemberBinding="{Binding Position}"/>
+                        <GridViewColumn Header="Phòng Ban" DisplayMemberBinding="{Binding Department}"/>
+
+
+                        <GridViewColumn Header="Năm Làm Việc" DisplayMemberBinding="{Binding year}"/>
+                        <GridViewColumn Header="Số Lượng Sản Phẩm" DisplayMemberBinding="{Binding product}"/>
+                        <GridViewColumn Header="Lương Tháng" DisplayMemberBinding="{Binding Salary}"/>
+                        <GridViewColumn Header="Lương Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
+                        <GridViewColumn Header="Tổng Lương" DisplayMemberBinding="{Binding TotalSalary,StringFormat={}{0:F3}}"/>
+
+                        <GridViewColumn Header="Thành Phố" DisplayMemberBinding="{Binding City}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <!-- Button to go back to MainWindow -->
+            <Button Grid.Row="4" Click="Button_Click_2" Content="Back To MainWinDow" Width="130" Background="BlueViolet" Margin="5"  Foreground="White"/>
+        </Grid>
+    </Viewbox>
+</Page>

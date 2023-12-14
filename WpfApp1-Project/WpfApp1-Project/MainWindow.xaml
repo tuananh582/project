@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Employee Manager Made By Tuan Anh and Group 6" Height="450" Width="800">
 
-
     <Grid>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -16,31 +15,52 @@
                 <GradientStop Color="#9C27B0" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+       
 
+        <Menu VerticalAlignment="Top" FontSize="16">
+            <MenuItem Header="Quan ly danh muc" Height="40">
+                <MenuItem Header="Cap nhat chuc vu" Click="btnUpdate_Pos_Click" Height="30"/>
+                <MenuItem Header="Cap nhat phong ban" Click="btnUpdate_Depart_Click" Height="30"/>
+
+            </MenuItem>
+            <MenuItem Header="Quan ly nhan vien" Height="40">
+                <MenuItem Header="Cap nhat thong tin nhan vien" Click="btnUpdate_infor_Click" Height="30"/>
+                <MenuItem Header="Cap nhat so nam cong tac " Click="btn_UpdateYear_Click" Height="30"/>
+                
+            </MenuItem>
+            <MenuItem Header="Quan ly luong thuong" Height="40">
+                <MenuItem Header="Cap nhat Luong " Click="btnUpdate_Salary_Click" Height="30"/>
+                <MenuItem Header="Cap nhat so san pham lam duoc" Click="btnSearch_Click" Height="30"/>
+            </MenuItem>
+            <MenuItem Header="Thong Ke" Height="40">
+                <MenuItem Header="Thong ke theo ten"  Height="30"/>
+                <MenuItem Header="Thong ke theo so nam cong tac" Click="btnShowAll_Click" Height="30"/>
+                <MenuItem Header="Thong ke theo phong "  Height="30"/>
+
+
+            </MenuItem>
+        </Menu>
         <Viewbox Stretch="Uniform">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+                <!-- <Button x:Name="btnMainPage" Background="PaleVioletRed" Foreground="White" Margin="5" Content="Main Page" Click="btnMainPage_Click" Width="150" />-->
+                <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
+                <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#2196F3" Foreground="White"/>
 
-                <!-- Header -->
-              
-
-                <!-- Action Buttons -->
-                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
-                    <!-- <Button x:Name="btnMainPage" Background="PaleVioletRed" Foreground="White" Margin="5" Content="Main Page" Click="btnMainPage_Click" Width="150" />-->
-                    <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
-                    <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#2196F3" Foreground="White"/>
-                    
-                    <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Thống Kê" Width="80" Margin="5" Background="#FF9800" Foreground="White"/>
-                </StackPanel>
-
-                <!-- Employee List -->
-               
+            </StackPanel>
             </Grid>
+            
+
         </Viewbox>
-        <Frame x:Name="mainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Margin="18,0,-18,0"/>
+
+
+
+
     </Grid>
 
 

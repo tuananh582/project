@@ -170,6 +170,21 @@
     <Compile Include="ShowAllEmployeesPage.xaml.cs">
       <DependentUpon>ShowAllEmployeesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDepart.xaml.cs">
+      <DependentUpon>UpdateDepart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateInfor.xaml.cs">
+      <DependentUpon>UpdateInfor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePos.xaml.cs">
+      <DependentUpon>UpdatePos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSalary.xaml.cs">
+      <DependentUpon>UpdateSalary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateYear.xaml.cs">
+      <DependentUpon>UpdateYear.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddEmployeePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -195,6 +210,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ShowAllEmployeesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateDepart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateInfor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdatePos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateSalary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateYear.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

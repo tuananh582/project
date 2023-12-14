@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -31,11 +32,14 @@ namespace WpfApp1_Project
         public MainWindow()
         {
             InitializeComponent();
-            //listViewEmployees.ItemsSource = employees;
-
-            //NavigateToMainPage()
-
-            ConnectToMongoDB();
+            try
+            {
+                ConnectToMongoDB();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error initializing application: " + ex.ToString());
+            }
         }
         private void ConnectToMongoDB()
         {
@@ -78,5 +82,72 @@ namespace WpfApp1_Project
             mainFrame.NavigationService.Navigate(searchPage);
 
         }
+
+        private void btnUpdate_Depart_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateDepart updateDepartPage = new UpdateDepart(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateDepartPage);
+
+        }
+
+        private void btnUpdate_Pos_Click(object sender, RoutedEventArgs e)
+        {
+            UpdatePos updatePosPage = new UpdatePos(employeeCollection);
+            mainFrame.NavigationService.Navigate(updatePosPage);
+        }
+
+        private void btnUpdate_infor_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateInfor updateInfor=new UpdateInfor(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateInfor);
+        }
+
+        private void btn_UpdateYear_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateYear updateYear= new UpdateYear(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateYear);
+
+
+        }
+
+        private void btnUpdate_Salary_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateSalary updateSalary= new UpdateSalary(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateSalary);
+        }
+
+        //private void ToggleButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ToggleButton clickedButton = sender as ToggleButton;
+
+        //    if (clickedButton != null)
+        //    {
+        //        string popupName = clickedButton.Name + "Popup";
+        //        Popup associatedPopup = this.FindName(popupName) as Popup;
+
+        //        if (associatedPopup != null)
+        //        {
+        //            if (clickedButton.IsChecked == true)
+        //            {
+        //                // Open the Popup when ToggleButton is checked
+        //                associatedPopup.Placement = PlacementMode.Bottom;
+        //                associatedPopup.IsOpen = true;
+        //            }
+        //            else
+        //            {
+        //                // Close the Popup when ToggleButton is unchecked
+        //                associatedPopup.IsOpen = false;
+        //            }
+        //        }
+        //    }
+        //}
+
+        //private void MenuButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (MenuButton.ContextMenu != null)
+        //    {
+        //        MenuButton.ContextMenu.IsOpen = !MenuButton.ContextMenu.IsOpen;
+        //    }
+        //}
     }
 }
