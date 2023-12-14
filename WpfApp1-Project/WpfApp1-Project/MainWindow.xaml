@@ -30,12 +30,12 @@
             </MenuItem>
             <MenuItem Header="Quan ly luong thuong" Height="40">
                 <MenuItem Header="Cap nhat Luong " Click="btnUpdate_Salary_Click" Height="30"/>
-                <MenuItem Header="Cap nhat so san pham lam duoc" Click="btnSearch_Click" Height="30"/>
+                <MenuItem Header="Cap nhat so san pham lam duoc" Click="btnUpdate_Product_Click" Height="30"/>
             </MenuItem>
             <MenuItem Header="Thong Ke" Height="40">
-                <MenuItem Header="Thong ke theo ten"  Height="30"/>
-                <MenuItem Header="Thong ke theo so nam cong tac" Click="btnShowAll_Click" Height="30"/>
-                <MenuItem Header="Thong ke theo phong "  Height="30"/>
+                <MenuItem Header="Thong ke theo ten" Click="Find_Name_Click"  Height="30"/>
+                <MenuItem Header="Thong ke theo so nam cong tac" Click="FindYear_Click" Height="30"/>
+                <MenuItem Header="Thong ke theo phong " Click="FindDepart_Click"  Height="30"/>
 
 
             </MenuItem>

@@ -74,3 +74,11 @@ G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateYear.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateYear.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateSalary.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateSalary.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateProduct.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateProduct.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchName.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchName.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchYear.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchYear.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchDepart.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchDepart.baml

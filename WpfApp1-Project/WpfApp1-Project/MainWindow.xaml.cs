@@ -116,38 +116,31 @@ namespace WpfApp1_Project
             mainFrame.NavigationService.Navigate(updateSalary);
         }
 
-        //private void ToggleButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    ToggleButton clickedButton = sender as ToggleButton;
+        private void btnUpdate_Product_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateProduct updateProduct = new UpdateProduct(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateProduct);
+        }
 
-        //    if (clickedButton != null)
-        //    {
-        //        string popupName = clickedButton.Name + "Popup";
-        //        Popup associatedPopup = this.FindName(popupName) as Popup;
+        private void Find_Name_Click(object sender, RoutedEventArgs e)
+        {
+            SearchName searchName = new SearchName(employeeCollection);
+            mainFrame.NavigationService.Navigate(searchName);
 
-        //        if (associatedPopup != null)
-        //        {
-        //            if (clickedButton.IsChecked == true)
-        //            {
-        //                // Open the Popup when ToggleButton is checked
-        //                associatedPopup.Placement = PlacementMode.Bottom;
-        //                associatedPopup.IsOpen = true;
-        //            }
-        //            else
-        //            {
-        //                // Close the Popup when ToggleButton is unchecked
-        //                associatedPopup.IsOpen = false;
-        //            }
-        //        }
-        //    }
-        //}
+        }
 
-        //private void MenuButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    if (MenuButton.ContextMenu != null)
-        //    {
-        //        MenuButton.ContextMenu.IsOpen = !MenuButton.ContextMenu.IsOpen;
-        //    }
-        //}
+        private void FindYear_Click(object sender, RoutedEventArgs e)
+        {
+            SearchYear searchYear = new SearchYear(employeeCollection);
+            mainFrame.NavigationService.Navigate(searchYear);
+        }
+
+        private void FindDepart_Click(object sender, RoutedEventArgs e)
+        {
+            SearchDepart searchDepart= new SearchDepart(employeeCollection);
+            mainFrame.NavigationService.Navigate(searchDepart);
+
+
+        }
     }
 }

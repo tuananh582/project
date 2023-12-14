@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\doan\WpfApp1-Project\WpfApp1-Project\App.xaml
-91308272230
+13-626654286
 2-488606117
-15-450728008
+19-911700824
 141-1356387717
-AddEmployeePage.xaml;MainWindow.xaml;SearchPage.xaml;ShowAllEmployeesPage.xaml;UpdateDepart.xaml;UpdateInfor.xaml;UpdatePos.xaml;UpdateSalary.xaml;UpdateYear.xaml;
+AddEmployeePage.xaml;MainWindow.xaml;SearchDepart.xaml;SearchName.xaml;SearchPage.xaml;SearchYear.xaml;ShowAllEmployeesPage.xaml;UpdateDepart.xaml;UpdateInfor.xaml;UpdatePos.xaml;UpdateProduct.xaml;UpdateSalary.xaml;UpdateYear.xaml;
 
 True
 

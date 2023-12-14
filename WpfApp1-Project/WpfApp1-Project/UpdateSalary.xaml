@@ -50,7 +50,7 @@
                             <GridViewColumn Header="Số Lượng Sản Phẩm" DisplayMemberBinding="{Binding product}"/>
                             <GridViewColumn Header="Lương Tháng" DisplayMemberBinding="{Binding Salary}"/>
                             <GridViewColumn Header="Lương Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
-                            <GridViewColumn Header="Tổng Lương" DisplayMemberBinding="{Binding TotalSalary,StringFormat={}{0:F3}}"/>
+                            <GridViewColumn Header="Tổng Lương" DisplayMemberBinding="{Binding TotalSalary}"/>
 
                             <GridViewColumn Header="Thành Phố" DisplayMemberBinding="{Binding City}"/>
                         </GridView>

@@ -164,8 +164,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SearchDepart.xaml.cs">
+      <DependentUpon>SearchDepart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchName.xaml.cs">
+      <DependentUpon>SearchName.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SearchPage.xaml.cs">
       <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchYear.xaml.cs">
+      <DependentUpon>SearchYear.xaml</DependentUpon>
     </Compile>
     <Compile Include="ShowAllEmployeesPage.xaml.cs">
       <DependentUpon>ShowAllEmployeesPage.xaml</DependentUpon>
@@ -178,6 +187,9 @@
     </Compile>
     <Compile Include="UpdatePos.xaml.cs">
       <DependentUpon>UpdatePos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.xaml.cs">
+      <DependentUpon>UpdateProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="UpdateSalary.xaml.cs">
       <DependentUpon>UpdateSalary.xaml</DependentUpon>
@@ -205,7 +217,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SearchDepart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchYear.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -222,6 +246,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdatePos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
