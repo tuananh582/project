@@ -65,7 +65,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
         }
 
         private async  void Button_Update_Click(object sender, RoutedEventArgs e)
@@ -99,7 +98,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter an employee code and a new department.");
             }
-            ClearInput();
         }
         private async Task RefreshListView()
         {
@@ -119,13 +117,7 @@ namespace WpfApp1_Project
                 MessageBox.Show("Error refreshing employee list: " + ex.Message);
             }
         }
-        private void ClearInput()
-        {
-            txtSearchMaNv.Text = "";
-            txtUpdateName.Text = "";
-            txtUpdateAge.Text="";
-
-        }
+        
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();

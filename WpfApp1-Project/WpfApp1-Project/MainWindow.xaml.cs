@@ -142,5 +142,16 @@ namespace WpfApp1_Project
 
 
         }
+
+        private void Support_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new Support());
+        }
+
+        private void btn_Update_Cong_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateCong updateCong = new UpdateCong(employeeCollection);
+            mainFrame.NavigationService.Navigate(updateCong);
+        }
     }
 }

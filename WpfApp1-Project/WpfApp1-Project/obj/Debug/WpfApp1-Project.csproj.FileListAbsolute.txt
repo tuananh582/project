@@ -82,3 +82,7 @@ G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchYear.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchYear.baml
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchDepart.g.cs
 G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\SearchDepart.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\Support.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\Support.baml
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateCong.g.cs
+G:\doan\WpfApp1-Project\WpfApp1-Project\obj\Debug\UpdateCong.baml

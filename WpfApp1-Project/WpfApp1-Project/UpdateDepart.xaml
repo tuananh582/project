@@ -8,9 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
        Background="White"
       Title="UpdateDepart">
-
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="G:\doan\background.jpg"/>
+        </Grid.Background>
     <Viewbox Stretch="Uniform">
         <Grid Margin="20">
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -27,7 +31,7 @@
             <Button Content="Tìm Kiếm" Width="100" Click="Button_Click" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right"/>
             <TextBlock Text="Nhập Phòng Ban : " FontWeight="Bold" Margin="0,10,0,0" Grid.Row="1"/>
             <TextBox x:Name="txtUpdateDepartment" Grid.Row="1" Margin="120,10,0,0" Width="200"/>
-            <Button Content="Update" Width="100" Click="Button_Click_1" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right" Grid.Row="1"  Margin="325,10,0,0"/>
+            <Button Content="Cập nhật" Width="100" Click="Button_Click_1" Foreground="White" Background="PaleVioletRed" HorizontalAlignment="Right" Grid.Row="1"  Margin="325,10,0,0"/>
 
             <ListView x:Name="listViewSearchResults" Grid.Row="3" Margin="0,10" Background="WhiteSmoke">
                 <ListView.View>
@@ -37,19 +41,18 @@
                                 <Setter Property="HorizontalContentAlignment" Value="Center"/>
                             </Style>
                         </GridView.ColumnHeaderContainerStyle>
-
                         <GridViewColumn Header="Mã NV" DisplayMemberBinding="{Binding MaNv}"/>
                         <GridViewColumn Header="Tên" DisplayMemberBinding="{Binding Name}"/>
-                        <GridViewColumn Header="Tuổi" DisplayMemberBinding="{Binding Age}"/>
-                        <GridViewColumn Header="Chức Vụ" DisplayMemberBinding="{Binding Position}"/>
+                        <GridViewColumn Header="Năm Sinh" DisplayMemberBinding="{Binding Age}"/>
                         <GridViewColumn Header="Phòng Ban" DisplayMemberBinding="{Binding Department}"/>
-
-
+                        <GridViewColumn Header="Chức Vụ" DisplayMemberBinding="{Binding Position}"/>
                         <GridViewColumn Header="Năm Làm Việc" DisplayMemberBinding="{Binding year}"/>
+                        <GridViewColumn Header="Lương" DisplayMemberBinding="{Binding Salary}"/>
+                        <GridViewColumn Header="Công" DisplayMemberBinding="{Binding Cong}"/>
+
+                        <GridViewColumn Header="Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
                         <GridViewColumn Header="Số Lượng Sản Phẩm" DisplayMemberBinding="{Binding product}"/>
-                        <GridViewColumn Header="Lương Tháng" DisplayMemberBinding="{Binding Salary}"/>
-                        <GridViewColumn Header="Lương Thưởng" DisplayMemberBinding="{Binding BonusSalary}"/>
-                        <GridViewColumn Header="Tổng Lương" DisplayMemberBinding="{Binding TotalSalary,StringFormat={}{0:F3}}"/>
+                        <GridViewColumn Header="Tổng Lương" DisplayMemberBinding="{Binding TotalSalary}"/>
 
                         <GridViewColumn Header="Thành Phố" DisplayMemberBinding="{Binding City}"/>
                     </GridView>
@@ -57,7 +60,8 @@
             </ListView>
 
             <!-- Button to go back to MainWindow -->
-            <Button Grid.Row="4" Click="Button_Click_2" Content="Back To MainWinDow" Width="130" Background="BlueViolet" Margin="5"  Foreground="White"/>
+            <Button Grid.Row="4" Click="Button_Click_2" Content="Quay Lại" Width="130" Background="BlueViolet" Margin="5"  Foreground="White"/>
         </Grid>
     </Viewbox>
+    </Grid>
 </Page>

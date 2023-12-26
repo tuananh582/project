@@ -2,15 +2,17 @@
 
 FG:\doan\WpfApp1-Project\WpfApp1-Project\AddEmployeePage.xaml;;
 FG:\doan\WpfApp1-Project\WpfApp1-Project\MainWindow.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchPage.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\ShowAllEmployeesPage.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateDepart.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdatePos.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateInfor.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateYear.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateSalary.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateProduct.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchName.xaml;;
-FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchYear.xaml;;
 FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchDepart.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchName.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchPage.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\SearchYear.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\ShowAllEmployeesPage.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\Support.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateDepart.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateInfor.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdatePos.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateProduct.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateSalary.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateYear.xaml;;
+FG:\doan\WpfApp1-Project\WpfApp1-Project\UpdateCong.xaml;;
 

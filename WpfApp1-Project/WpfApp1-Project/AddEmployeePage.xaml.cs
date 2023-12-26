@@ -54,13 +54,14 @@ namespace WpfApp1_Project
                 {
                     Name = txtName.Text,
                     Age = int.Parse(txtAge.Text),
-                    Salary = decimal.Parse(txtSalary.Text),
                     product = decimal.Parse(txtProduct.Text),
                     Department = txtDepartment.Text,
                     City = txtCity.Text,
                     MaNv= txtmanv.Text,
                     year =decimal.Parse(txtYear.Text),
                     Position=txtPos.Text,
+                    Cong=int.Parse(txtCong.Text),
+                    Salary=int.Parse(txtSalary.Text),
                 };
                 // Inserting the new employee into the MongoDB collection
                 await employeeCollection.InsertOneAsync(newEmployee);
@@ -68,26 +69,14 @@ namespace WpfApp1_Project
                 // Display success message or perform any necessary actions after adding employee
                 MessageBox.Show("Employee added successfully.");
                 // Clear input fields after adding an employee
-                ClearInputFields();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error adding employee: " + ex.Message);
             }
         }
-        private void ClearInputFields()
-        {
-            txtName.Text = "";
-            txtAge.Text = "";
-            txtSalary.Text = "";
-            txtProduct.Text = "";
-            txtDepartment.Text = "";
-            txtCity.Text = "";
-            txtYear.Text = "";
-            txtmanv.Text = "";
-            txtPos.Text = "";
-
-        }
+       
+        
 
         private void BackToMainWinDow_Click(object sender, RoutedEventArgs e)
         {

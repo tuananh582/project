@@ -58,7 +58,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter an employee code and a new department.");
             }
-            ClearInput();
 
         }
         private async Task RefreshListView()
@@ -113,14 +112,8 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
         }
-        private void ClearInput()
-        {
-            txtSearchMaNv.Text = "";
-            txtUpdateSalary.Text = "";
-
-        }
+        
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {

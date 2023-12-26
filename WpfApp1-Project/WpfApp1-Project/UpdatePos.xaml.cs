@@ -67,7 +67,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
 
 
 
@@ -104,7 +103,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter an employee code and a new department.");
             }
-            ClearInput();
 
 
 
@@ -127,12 +125,7 @@ namespace WpfApp1_Project
                 MessageBox.Show("Error refreshing employee list: " + ex.Message);
             }
         }
-        private void ClearInput()
-        {
-            txtSearchMaNv.Text = "";
-            txtUpdatePos.Text = "";
-
-        }
+      
 
         private void Back_Click_1(object sender, RoutedEventArgs e)
         {

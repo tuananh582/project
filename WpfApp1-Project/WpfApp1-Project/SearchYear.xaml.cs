@@ -63,14 +63,8 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
         }
-        private void ClearInput()
-        {
-            txtSearchYear.Text = "";
-
-        }
-
+     
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();

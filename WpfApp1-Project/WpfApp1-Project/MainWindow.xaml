@@ -9,36 +9,34 @@
 
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#4CAF50" Offset="0"/>
-                <GradientStop Color="#2196F3" Offset="0.5"/>
-                <GradientStop Color="#9C27B0" Offset="1"/>
-            </LinearGradientBrush>
+            <ImageBrush ImageSource="G:\doan\giaodien.jpg"/>
         </Grid.Background>
        
 
         <Menu VerticalAlignment="Top" FontSize="16">
-            <MenuItem Header="Quan ly danh muc" Height="40">
-                <MenuItem Header="Cap nhat chuc vu" Click="btnUpdate_Pos_Click" Height="30"/>
-                <MenuItem Header="Cap nhat phong ban" Click="btnUpdate_Depart_Click" Height="30"/>
+            <MenuItem Header="Quản lý danh mục" Height="40">
+                <MenuItem Header="Cập nhật chức vụ" Click="btnUpdate_Pos_Click" Height="30"/>
+                <MenuItem Header="Cập nhật phòng ban" Click="btnUpdate_Depart_Click" Height="30"/>
 
             </MenuItem>
-            <MenuItem Header="Quan ly nhan vien" Height="40">
-                <MenuItem Header="Cap nhat thong tin nhan vien" Click="btnUpdate_infor_Click" Height="30"/>
-                <MenuItem Header="Cap nhat so nam cong tac " Click="btn_UpdateYear_Click" Height="30"/>
+            <MenuItem Header="Quản lý nhân viên" Height="40">
+                <MenuItem Header="Cập nhật thông tin nhân viên" Click="btnUpdate_infor_Click" Height="30"/>
+                <MenuItem Header="Cập nhật số năm công tác " Click="btn_UpdateYear_Click" Height="30"/>
                 
             </MenuItem>
-            <MenuItem Header="Quan ly luong thuong" Height="40">
-                <MenuItem Header="Cap nhat Luong " Click="btnUpdate_Salary_Click" Height="30"/>
-                <MenuItem Header="Cap nhat so san pham lam duoc" Click="btnUpdate_Product_Click" Height="30"/>
+            <MenuItem Header="Quản lý lương thưởng" Height="40">
+                <MenuItem Header="Cập nhật số công" Click="btn_Update_Cong_Click" Height="30"/>
+                <MenuItem Header="Cập nhật lương " Click="btnUpdate_Salary_Click" Height="30"/>
+                <MenuItem Header="Cập nhật thưởng" Click="btnUpdate_Product_Click" Height="30"/>
             </MenuItem>
-            <MenuItem Header="Thong Ke" Height="40">
-                <MenuItem Header="Thong ke theo ten" Click="Find_Name_Click"  Height="30"/>
-                <MenuItem Header="Thong ke theo so nam cong tac" Click="FindYear_Click" Height="30"/>
-                <MenuItem Header="Thong ke theo phong " Click="FindDepart_Click"  Height="30"/>
+            <MenuItem Header="Thống kê" Height="40">
+                <MenuItem Header="Thống kê theo tên" Click="Find_Name_Click"  Height="30"/>
+                <MenuItem Header="Thống kê theo số năm công tác" Click="FindYear_Click" Height="30"/>
+                <MenuItem Header="Thống kê theo phòng " Click="FindDepart_Click"  Height="30"/>
+            </MenuItem>
+            <MenuItem Header=" Hỗ trợ" Height="40" Click="Support_Click" />
 
 
-            </MenuItem>
         </Menu>
         <Viewbox Stretch="Uniform">
             <Grid>
@@ -46,17 +44,15 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
-                <!-- <Button x:Name="btnMainPage" Background="PaleVioletRed" Foreground="White" Margin="5" Content="Main Page" Click="btnMainPage_Click" Width="150" />-->
-                <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5" Background="#4CAF50" Foreground="White"/>
-                <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#2196F3" Foreground="White"/>
+                <StackPanel Grid.Row="1"   Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <!-- <Button x:Name="btnMainPage" Background="PaleVioletRed" Foreground="White" Margin="5" Content="Main Page" Click="btnMainPage_Click" Width="150" />-->
+                    <Button x:Name="btnAddEmployee" Click="btnAddEmployee_Click" Content="Thêm Nhân Viên" Width="120" Margin="5"  Background="#3565e8" Foreground="White"/>
+                    <Button x:Name="btnShowAll" Content="Hiển Thị Thông Tin Nhân Viên" Click="btnShowAll_Click" Width="170" Margin="5" Background="#3565e8"  Foreground="White"/>
 
-            </StackPanel>
+                </StackPanel>
             </Grid>
-            
-
         </Viewbox>
-        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Margin="18,0,-18,0"/>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Margin="10,0,-10,0"/>
 
 
 

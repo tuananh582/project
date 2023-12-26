@@ -11,18 +11,25 @@
 
 
     <Viewbox>
+
+       
+
+
         <Grid Width="800" Height="450">
+            <Grid.Background>
+                <ImageBrush ImageSource="G:\doan\addnv.jpg"/>
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Add Employee" FontSize="20" HorizontalAlignment="Center" Margin="0,20,0,10" Grid.Row="0"/>
+            <TextBlock Text="Thêm nhân viên" FontSize="20" HorizontalAlignment="Center" Margin="0,20,0,10" Grid.Row="0"/>
             <StackPanel Grid.Row="1" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <!-- Your Existing Input Fields -->
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Mã NV: " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Mã: "  Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtmanv" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -30,31 +37,35 @@
                     <TextBox x:Name="txtName" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Tuổi: " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Năm Sinh:  " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtAge" Width="200"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập chức vụ " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Chức Vụ: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtPos" Width="200"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Phòng Ban : " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Phòng Ban: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtDepartment" Width="200"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                <TextBlock Text="Nhập Số Năm " Width="100" VerticalAlignment="Center"/>
+                <TextBlock Text="Nhập Số Năm: " Width="100" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtYear" Width="200"/>
             </StackPanel>
                 
             <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text="Nhập Lương : " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Lương: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtSalary" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5">
-                    <TextBlock Text=" Sản Phẩm Đã Làm " Width="100" VerticalAlignment="Center"/>
+                    <TextBlock Text="Nhập Số Công: " Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtCong" Width="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Sản Phẩm Đã Làm: " Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtProduct" Width="200"/>
                 </StackPanel>
                 
@@ -63,7 +74,7 @@
                     <TextBox x:Name="txtCity" Width="200"/>
                 </StackPanel>   
             </StackPanel>
-            <Button Content="Thêm Nhân Viên"  Width="150" Height="40" Margin="0,10" Grid.Row="2" HorizontalAlignment="Center" Click="btnAddEmployee_Click">
+            <Button Content="Thêm Nhân Viên"  Width="150" Height="20" Margin="0,10" Grid.Row="2" HorizontalAlignment="Center" Click="btnAddEmployee_Click">
                 <!-- Your Button Style -->
                 <Button.Style>
                     <Style TargetType="Button">
@@ -92,7 +103,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="btnDelete" Content="Quay Về Trang Chủ" Click="BackToMainWinDow_Click" Width="150" Background="#FF5722" Foreground="White" Grid.Row="3" Margin="20">
+            <Button x:Name="btnDelete" Content="Quay Về Trang Chủ" Click="BackToMainWinDow_Click" Width="150" Background="#FF5722" Foreground="White" Grid.Row="3" Margin="2">
                 <!-- Your Back Button Style -->
             </Button>
         </Grid>

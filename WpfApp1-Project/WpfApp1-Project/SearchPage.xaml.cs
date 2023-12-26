@@ -69,16 +69,10 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
 
         }
        
-        private void ClearInput()
-        {
-            txtSearchName.Text = "";
-            txtSearchDepartment.Text = "";
-            txtSearchYear.Text = "";
-        }
+        
 
         private void BackToMain_Click(object sender, RoutedEventArgs e)
         {
@@ -119,7 +113,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
 
 
         }
@@ -156,7 +149,6 @@ namespace WpfApp1_Project
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-            ClearInput();
 
 
   

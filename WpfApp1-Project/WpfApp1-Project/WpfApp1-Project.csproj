@@ -179,6 +179,12 @@
     <Compile Include="ShowAllEmployeesPage.xaml.cs">
       <DependentUpon>ShowAllEmployeesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Support.xaml.cs">
+      <DependentUpon>Support.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCong.xaml.cs">
+      <DependentUpon>UpdateCong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDepart.xaml.cs">
       <DependentUpon>UpdateDepart.xaml</DependentUpon>
     </Compile>
@@ -234,6 +240,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ShowAllEmployeesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateCong.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
